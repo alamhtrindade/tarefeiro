@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Aplicacao\Console;
+namespace App\Application\Console;
 
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -12,7 +12,6 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        ClearPolicyCache::class,
     ];
 
     /**

@@ -59,6 +59,7 @@ services:
     restart: always
     volumes:
       - postgresql10:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d/
     networks:
       - traefik_network # Corrigido para usar o nome da rede correta
     environment:
